@@ -17,21 +17,35 @@
   top: 50%;
   transform: translateY(-50%);
   h2{
-    padding-bottom: 60px;
+    padding-bottom: 50px;
     span{
       display: inline-block;
-      opacity: 0;
     }
   }
 }
-
-section {
-  height: 100vh;
-  color: black;
+.content2{
+  top: 50px;
+  h3{
+    padding-bottom: 30px;
+  }
+  p{
+    @include p2;
+  }
 }
-
-section h1 {
-  padding-top: 300px;
-  text-align: center;
-  font-size: 80px;
+.content3{
+  bottom: 130px;
+  h4{
+    padding-top: 90px;
+    padding-bottom: 20px;
+  }
+  p{
+    @include p2;
+  }
+}
+.content4, .content5, .content6{
+  top: 50%;
+  transform: translateY(-50%);
+  h3{
+    padding-bottom: 60px;
+  }
 }
