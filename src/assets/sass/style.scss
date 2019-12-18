@@ -1,23 +1,7 @@
 @import "./reset";
 @import "./fonts";
 @import "./variables";
-
-html, body{
-  min-width: 320px;
-  overflow-x: hidden;
-  font-family: $mainFont;
-  font-size: 24px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-}
+@import "./general";
 
 .intro {
   height: 100vh;
@@ -29,13 +13,16 @@ body {
   object-fit: cover;
 }
 
-.intro h1 {
-  position: absolute;
+.content1{
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 80px;
-  color: white;
+  transform: translateY(-50%);
+  h2{
+    padding-bottom: 60px;
+    span{
+      display: inline-block;
+      opacity: 0;
+    }
+  }
 }
 
 section {
