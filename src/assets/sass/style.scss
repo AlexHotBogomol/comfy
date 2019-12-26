@@ -14,8 +14,6 @@
 }
 
 .content1{
-  top: 50%;
-  transform: translateY(-50%);
   h2{
     padding-bottom: 50px;
     span{
@@ -43,9 +41,15 @@
   }
 }
 .content4, .content5, .content6{
-  top: 50%;
-  transform: translateY(-50%);
   h3{
     padding-bottom: 60px;
+  }
+}
+
+.content7{
+  h2{
+    span:first-child{
+      color: $greyColor;
+    }
   }
 }

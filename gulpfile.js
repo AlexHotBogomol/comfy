@@ -13,6 +13,7 @@ const babel = require("gulp-babel");
 const uglify = require("gulp-uglify");
 const plumber = require("gulp-plumber");
 const imagemin = require("gulp-imagemin");
+const include = require('gulp-include')
 const del = require("del");
 const browsersync = require("browser-sync").create();
 
@@ -100,6 +101,8 @@ function css() {
 
 function js() {
   return src(path.src.js, { base: "./src/assets/js/" })
+    .pipe(include())
+    .on('error', console.log)
     .pipe(plumber())
     .pipe(rigger())
     .pipe(

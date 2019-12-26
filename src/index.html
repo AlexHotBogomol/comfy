@@ -5,65 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Comfy</title>
+    <link rel="shortcut icon" href="/assets/i/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="/assets/css/style.min.css" />
   </head>
   <body>
     <div class="intro">
-      <div class="container">
-        <div class="content content1" id="content1">
-          <h2>
-            <span class="invisible">IPhone 11 Pro</span><br />
-            <span class="invisible">— это прорыв.</span>
-          </h2>
-          <button class="btn btn--withArrow invisible">Купить в Comfy</button>
-        </div>
-        <div class="content content2 w-100" id="content2">
-          <h3 class="invisible text-align">
-            В его стекле усилена<br />
-            каждая молекула.
-          </h3>
-          <p class="invisible text-align">
-            Самое прочное стекло iPhone с обеих сторон.
-          </p>
-        </div>
-        <div class="content content3" id="content3">
-          <h4 class="invisible">
-            Тщательно<br />
-            обработанное
-          </h4>
-          <p class="invisible">цельное листовое стекло</p>
-          <h4 class="invisible">
-            Процесс двойного<br />
-            ионного обмена
-          </h4>
-          <p class="invisible">для дополнительной прочности</p>
-        </div>
-        <div class="content content4" id="content4">
-          <h3 class="invisible">
-            Революционная<br/>
-            система трёх камер.
-          </h3>
-          <button class="btn btn--withArrow invisible">Купить в Comfy</button>
-        </div>
-        <div class="content content5" id="content5">
-          <h3 class="invisible">
-            Беспрецедентное<br/>
-            увеличение ресурса<br/>
-            аккумулятора.
-          </h3>
-          <button class="btn btn--withArrow invisible">Купить в Comfy</button>
-        </div>
-        <div class="content content5" id="content6">
-          <h3 class="invisible">
-            Процессор с<br/>
-            технологией<br/>
-            машинного обучения.
-          </h3>
-          <button class="btn btn--withArrow invisible">Купить в Comfy</button>
-        </div>
-      </div>
-      <video id="video" src="./assets/videos/iphone.mp4"></video>
+<!--      <div class="container">-->
+<!--        <div class="content content1 vertical-center" id="content1">-->
+<!--          <h2>-->
+<!--            <span class="invisible">IPhone 11 Pro</span><br />-->
+<!--            <span class="invisible">— это прорыв.</span>-->
+<!--          </h2>-->
+<!--          <button class="btn btn&#45;&#45;withArrow invisible">Купить в Comfy</button>-->
+<!--        </div>-->
+<!--        <div class="content content2 w-100" id="content2">-->
+<!--          <h3 class="invisible text-center">-->
+<!--            В его стекле усилена<br />-->
+<!--            каждая молекула.-->
+<!--          </h3>-->
+<!--          <p class="invisible text-center">-->
+<!--            Самое прочное стекло iPhone с обеих сторон.-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <div class="content content3" id="content3">-->
+<!--          <h4 class="invisible">-->
+<!--            Тщательно<br />-->
+<!--            обработанное-->
+<!--          </h4>-->
+<!--          <p class="invisible">цельное листовое стекло</p>-->
+<!--          <h4 class="invisible">-->
+<!--            Процесс двойного<br />-->
+<!--            ионного обмена-->
+<!--          </h4>-->
+<!--          <p class="invisible">для дополнительной прочности</p>-->
+<!--        </div>-->
+<!--        <div class="content content4 vertical-center" id="content4">-->
+<!--          <h3 class="invisible">-->
+<!--            Революционная<br/>-->
+<!--            система трёх камер.-->
+<!--          </h3>-->
+<!--          <button class="btn btn&#45;&#45;withArrow invisible">Купить в Comfy</button>-->
+<!--        </div>-->
+<!--        <div class="content content5 vertical-center" id="content5">-->
+<!--          <h3 class="invisible">-->
+<!--            Беспрецедентное<br/>-->
+<!--            увеличение ресурса<br/>-->
+<!--            аккумулятора.-->
+<!--          </h3>-->
+<!--          <button class="btn btn&#45;&#45;withArrow invisible">Купить в Comfy</button>-->
+<!--        </div>-->
+<!--        <div class="content content6 vertical-center" id="content6">-->
+<!--          <h3 class="invisible">-->
+<!--            Процессор с<br/>-->
+<!--            технологией<br/>-->
+<!--            машинного обучения.-->
+<!--          </h3>-->
+<!--          <button class="btn btn&#45;&#45;withArrow invisible">Купить в Comfy</button>-->
+<!--        </div>-->
+<!--        <div class="content content7 vertical-center" id="content7">-->
+<!--          <h2>-->
+<!--            <span class="invisible">Система<br/>-->
+<!--            камер Pro</span><br/>-->
+<!--            <span class="invisible">Великолепная<br/>-->
+<!--            тройка.</span>-->
+<!--          </h2>-->
+<!--        </div>-->
+<!--        <div class="content content8 w-100 vertical-center" id="content8">-->
+<!--          <h3 class="text-center invisible">-->
+<!--            Максимальная область<br/>-->
+<!--            изображения теперь в четыре<br/>-->
+<!--            раза больше.-->
+<!--          </h3>-->
+<!--        </div>-->
+<!--        <div class="content content8 w-100 vertical-center" id="content9">-->
+<!--          <h3 class="text-center invisible">-->
+<!--            Красивый снимок можно<br/>-->
+<!--            получить практически в<br/>-->
+<!--            темноте.-->
+<!--          </h3>-->
+<!--        </div>-->
+<!--        <div class="content content8 w-100 vertical-center" id="content10">-->
+<!--          <h3 class="text-center invisible">-->
+<!--            А качество видео<br/>-->
+<!--            превосходит все ожидания.-->
+<!--          </h3>-->
+<!--        </div>-->
+<!--      </div>-->
+        <video
+                id="video"
+                muted="muted"
+                autobuffer="autobuffer"
+                preload="preload"
+                src="./assets/videos/iphone.mp4"
+        ></video>
     </div>
+    <h1 class="hello">
+      hghghgjg
+    </h1>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.2/gsap.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
@@ -80,14 +119,20 @@
       integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk="
       crossorigin="anonymous"
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
-      integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      SmoothScroll({ stepSize: 100 })
-    </script>
+<!--    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.4.0/dist/lazyload.min.js"></script>-->
+<!--    <script-->
+<!--      src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"-->
+<!--      integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco="-->
+<!--      crossorigin="anonymous"-->
+<!--    ></script>-->
+<!--    <script>-->
+<!--      SmoothScroll({ stepSize: 30 })-->
+<!--    </script>-->
+<!--    <script>-->
+<!--      var lazyLoadInstance = new LazyLoad({-->
+<!--        elements_selector: ".lazy"-->
+<!--      });-->
+<!--    </script>-->
     <script src="/assets/js/app.min.js"></script>
   </body>
 </html>

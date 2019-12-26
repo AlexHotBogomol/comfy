@@ -26,5 +26,8 @@
   "browserslist": [
     "last 2 versions",
     "> 2%"
-  ]
+  ],
+  "dependencies": {
+    "gulp-include": "^2.4.1"
+  }
 }

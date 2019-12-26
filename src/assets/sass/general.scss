@@ -97,8 +97,12 @@ p {
   opacity: 0;
   visibility: hidden;
 }
-.text-align{
+.text-center{
   text-align: center;
+}
+.vertical-center{
+  top: 50%;
+  transform: translateY(-50%);
 }
 .w-100{
   width: 100%;
