@@ -4,7 +4,7 @@ const video = intro.querySelector("#video");
 const controller = new ScrollMagic.Controller();
 const scene = new ScrollMagic.Scene({
   triggerElement: intro,
-  duration: 69000,
+  duration: 35000,
   triggerHook: 0
 })
   .addIndicators()
@@ -23,5 +23,4 @@ setInterval(() => {
   delay += (scrollpos - delay) * accelamount;
   video.currentTime = delay;
 }, 33.3);
-
 
