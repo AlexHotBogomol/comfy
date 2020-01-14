@@ -3,6 +3,7 @@ const content1 = intro.querySelector("#content1"),
   content1HeadingSpan2 = content1.querySelector("h2 span:last-child"),
   content1Btn = content1.querySelector(".btn");
 
+const content1AnimStart = 0;
 
 //GSAP
 
@@ -34,7 +35,7 @@ const content1Anim = gsap.to(content1, {
 
 const content1scene1 = new ScrollMagic.Scene({
   triggerElement: intro,
-  offset: 7300,
+  offset: content1AnimStart + 0,
   duration: 800,
   triggerHook: 0
 })
@@ -43,7 +44,7 @@ const content1scene1 = new ScrollMagic.Scene({
 
 const content1scene2 = new ScrollMagic.Scene({
   triggerElement: intro,
-  offset: 7500,
+  offset: content1AnimStart + 200,
   duration: 600,
   triggerHook: 0
 })
@@ -52,7 +53,7 @@ const content1scene2 = new ScrollMagic.Scene({
 
 const content1scene3 = new ScrollMagic.Scene({
   triggerElement: intro,
-  offset: 7900,
+  offset: content1AnimStart + 600,
   duration: 100,
   triggerHook: 0
 })
@@ -61,7 +62,7 @@ const content1scene3 = new ScrollMagic.Scene({
 
 const content1scene4 = new ScrollMagic.Scene({
   triggerElement: intro,
-  offset: 9150,
+  offset: content1AnimStart + 1850,
   duration: 800,
   triggerHook: 0
 })

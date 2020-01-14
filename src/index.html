@@ -7,10 +7,10 @@
     <title>Comfy</title>
     <link
       rel="shortcut icon"
-      href="/assets/i/favicon.png"
+      href="./assets/i/favicon.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css" />
   </head>
   <body>
     <div class="intro">
@@ -110,16 +110,16 @@
       <video
         id="video"
         muted="muted"
+        autoplay="autoplay"
         autobuffer="autobuffer"
         preload="auto"
         src="./assets/videos/iphone.mp4"
         type="video/mp4"
       ></video>
     </div>
-    <h1 class="hello">
-      hghghgjg
-    </h1>
-
+    <!--    <h1 class="hello">-->
+    <!--      hghghgjg-->
+    <!--    </h1>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.2/gsap.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
@@ -132,18 +132,13 @@
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"
-      integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk="
+      src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+      integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco="
       crossorigin="anonymous"
     ></script>
-    <!--    <script-->
-    <!--      src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"-->
-    <!--      integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco="-->
-    <!--      crossorigin="anonymous"-->
-    <!--    ></script>-->
-    <!--    <script>-->
-    <!--      SmoothScroll({ stepSize: 30 })-->
-    <!--    </script>-->
-    <script src="/assets/js/app.min.js"></script>
+    <script>
+      SmoothScroll({ stepSize: 80 });
+    </script>
+    <script src="./assets/js/app.min.js"></script>
   </body>
 </html>
