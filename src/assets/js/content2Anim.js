@@ -2,53 +2,42 @@ const content2 = intro.querySelector("#content2"),
   content2Heading = content2.querySelector("h3"),
   content2Description = content2.querySelector("p");
 
-const content2AnimStart = 2700;
-
-//GSAP
-
-const content2HeadingAnim = gsap.to(content2Heading, {
+const content2AnimStart = gsap.fromTo("#content2", {
+  y: 80
+}, {
   opacity: 1,
+  y: 0,
   ease: "linear",
-  visibility: "visible"
-});
-const content2DescriptionAnim = gsap.to(content2Description, {
-  opacity: 1,
-  ease: "linear",
-  visibility: "visible"
-});
-const content2Anim = gsap.to(content2, {
-  opacity: 0,
-  ease: "linear",
-  y: -200,
-  visibility: "hidden"
+  visibility: "visible",
+  zIndex: 100,
+  duration: 1
 });
 
+// const content2EndTL = gsap.timeline();
+// content2EndTL.to(content2, {
+//   opacity: 0,
+//   ease: "linear",
+//   y: -160,
+// });
+// content2EndTL.set(content2, {
+//   zIndex: -1,
+//   visibility: "hidden",
+// });
 
-//Scroll Magic
-
-const content2scene1 = new ScrollMagic.Scene({
+const content2sceneStart = new ScrollMagic.Scene({
   triggerElement: intro,
-  offset: content2AnimStart,
-  duration: 300,
-  triggerHook: 0
-})
-  .setTween(content2HeadingAnim)
-  .addTo(controller);
-
-const content2scene2 = new ScrollMagic.Scene({
-  triggerElement: intro,
-  offset: content2AnimStart + 150,
+  offset: 800,
   duration: 200,
   triggerHook: 0
 })
-  .setTween(content2DescriptionAnim)
+  .setTween(content2AnimStart)
   .addTo(controller);
 
-const content2scene3 = new ScrollMagic.Scene({
-  triggerElement: intro,
-  offset: content2AnimStart + 1900,
-  duration: 300,
-  triggerHook: 0
-})
-  .setTween(content2Anim)
-  .addTo(controller);
+// const content2sceneEnd = new ScrollMagic.Scene({
+//   triggerElement: intro,
+//   offset: 1600,
+//   duration: 400,
+//   triggerHook: 0
+// })
+//   .setTween(content2EndTL)
+//   .addTo(controller);

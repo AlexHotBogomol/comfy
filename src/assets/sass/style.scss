@@ -8,10 +8,14 @@
   height: 100vh;
 }
 
-.intro video, .intro #imagesequence, .intro #imagesequence #myimg{
+.intro video{
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.banner{
+  display: none;
 }
 
 .content1{
