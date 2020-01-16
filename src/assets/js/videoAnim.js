@@ -1,39 +1,37 @@
 const intro = document.querySelector(".intro");
 const video = intro.querySelector("#video");
-const videoDelay = 8000;
-let stopPosition = 0;
 
-setTimeout(() => {
-  video.pause();
-  console.log(video.currentTime);
-  stopPosition = video.currentTime;
-  video.dispatchEvent(readyEvent);
-}, videoDelay);
+const framesPerSecond = 25;
+const pixelsPerSecond = 700;
+const timeToUpdateFrames = 1000 / framesPerSecond; // refresh rate in milliseconds
+const sceneDuration = video.duration * pixelsPerSecond; // duration of scene with video
+
+
+const sceneDelay = 8000; // delay before scroll
+// video.readyState === 4  video ready to play
+// video.currentTime
 
 const controller = new ScrollMagic.Controller();
 
 const scene = new ScrollMagic.Scene({
   triggerElement: intro,
+  duration: sceneDuration,
   triggerHook: 0
 })
   .setPin(intro)
   .addTo(controller);
 
-const readyEvent = new Event('readyToScroll');
+//Video Animation
+let accelamount = 0.1;
+let scrollpos = 0;
+let delay = 0;
 
-video.addEventListener('readyToScroll', (event) => {
-  let accelamount = 0.1;
-  let scrollpos = stopPosition;
-  let delay = stopPosition;
-
-  scene.duration((video.duration - stopPosition) * 1000);
-
-  scene.on("update", e => {
-    scrollpos = e.scrollPos / 1000 + stopPosition;
-  });
-
-  setInterval(() => {
-    delay += (scrollpos - delay) * accelamount;
-    video.currentTime = delay;
-  }, 33.3);
+scene.on("update", e => {
+  scrollpos = e.scrollPos / pixelsPerSecond;
 });
+
+setInterval(() => {
+  delay += (scrollpos - delay) * accelamount;
+  video.currentTime = delay;
+}, timeToUpdateFrames);
+

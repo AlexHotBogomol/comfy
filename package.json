@@ -28,6 +28,8 @@
     "> 2%"
   ],
   "dependencies": {
-    "gulp-include": "^2.4.1"
+    "gulp-include": "^2.4.1",
+    "scrollmagic": "^2.0.7",
+    "scrollmagic-sequencer": "^3.7.0-beta.4"
   }
 }

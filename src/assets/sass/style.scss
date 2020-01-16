@@ -8,7 +8,7 @@
   height: 100vh;
 }
 
-.intro video {
+.intro video, .intro #imagesequence, .intro #imagesequence #myimg{
   height: 100%;
   width: 100%;
   object-fit: cover;
