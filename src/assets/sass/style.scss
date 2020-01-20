@@ -27,7 +27,6 @@
   }
 }
 .content2{
-  top: 50px;
   h3{
     padding-bottom: 30px;
   }
@@ -37,7 +36,7 @@
 }
 .content3{
   bottom: 130px;
-  h4{
+  h5{
     padding-top: 90px;
     padding-bottom: 20px;
   }
@@ -46,7 +45,7 @@
   }
 }
 .content4, .content5, .content6{
-  h3{
+  h4{
     padding-bottom: 60px;
   }
 }
@@ -58,5 +57,27 @@
     }
   }
 }
+
+.content-cursor{
+  width: 50%;
+  h5{
+    margin-bottom: 40px;
+    &:after{
+      content: '';
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: $lightColor;
+      margin-top: 20px;
+    }
+  }
+  li{
+    @include p1;
+  }
+}
+.content15, .content18{
+  @include p1;
+}
+
 
 @import "./media";

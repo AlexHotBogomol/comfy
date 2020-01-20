@@ -1,53 +1,39 @@
-const content7 = intro.querySelector("#content7"),
-  content7HeadingSpan1 = content7.querySelector("h2 span:first-child"),
-  content7HeadingSpan2 = content7.querySelector("h2 span:last-child");
+const content7 = intro.querySelector("#content7");
 
-//GSAP
-
-const content7HeadingSpan1Anim = gsap.fromTo(
-  content7HeadingSpan1,
-  { opacity: 0, y: 15 },
-  { opacity: 1, ease: "linear", y: 0, visibility: "visible" }
-);
-const content7HeadingSpan2Anim = gsap.fromTo(
-  content7HeadingSpan2,
-  { opacity: 0, y: 20 },
-  { opacity: 1, ease: "linear", y: 0, visibility: "visible" }
-);
-
-const content7Anim = gsap.to(content7, {
-  ease: "linear.inOut",
-  y: -350,
-  opacity: 0,
-  visibility: "hidden"
+const content7AnimStart = gsap.to(content7, {
+  opacity: 1,
+  y: 0,
+  ease: "linear",
+  visibility: "visible",
+  zIndex: 100,
+  duration: 1
 });
 
+const content7EndTL = gsap.timeline();
+content7EndTL.to(content7, {
+  opacity: 0,
+  ease: "linear",
+  y: -40,
+});
+content7EndTL.set(content7, {
+  zIndex: -1,
+  visibility: "hidden",
+});
 
-//Scroll Magic
-
-const content7scene1 = new ScrollMagic.Scene({
+const content7sceneStart = new ScrollMagic.Scene({
   triggerElement: intro,
-  offset: 15000,
-  duration: 200,
+  offset: 6200,
+  duration: 100,
   triggerHook: 0
 })
-  .setTween(content7HeadingSpan1Anim)
+  .setTween(content7AnimStart)
   .addTo(controller);
 
-const content7scene2 = new ScrollMagic.Scene({
+const content7sceneEnd = new ScrollMagic.Scene({
   triggerElement: intro,
-  offset: 15100,
-  duration: 200,
+  offset: 6600,
+  duration: 100,
   triggerHook: 0
 })
-  .setTween(content7HeadingSpan2Anim)
-  .addTo(controller);
-
-const content7scene3 = new ScrollMagic.Scene({
-  triggerElement: intro,
-  offset: 15400,
-  duration: 350,
-  triggerHook: 0
-})
-  .setTween(content7Anim)
+  .setTween(content7EndTL)
   .addTo(controller);

@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function initScroll() {
-    const videoDuration = Math.floor(video.duration * pixelsPerSecond); // video duration in pixels
-    const sceneOffset = Math.floor(video.currentTime * pixelsPerSecond); // offset duration in pixels
+    const videoDuration = video.duration * pixelsPerSecond; // video duration in pixels
+    const sceneOffset = video.currentTime * pixelsPerSecond; // offset duration in pixels
     const sceneDuration = videoDuration - sceneOffset; // duration of scene subtract sceneOffset
 
     console.log(sceneDuration, sceneOffset);
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
       .addTo(controller);
 
     //Video Animation
-    let accelamount = 0.1;
+    let accelamount = 0.5;
     let scrollpos = sceneOffset / pixelsPerSecond;
     let delay = sceneOffset / pixelsPerSecond;
 
@@ -62,5 +62,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // =require content1Anim.js
     // =require content2Anim.js
+    // =require content3Anim.js
+    // =require content4Anim.js
+    // =require content5Anim.js
+    // =require content6Anim.js
+    // =require content7Anim.js
+    // =require content8Anim.js
+    // =require content9Anim.js
+    // =require content10Anim.js
+    // =require content11Anim.js
+    // =require content12Anim.js
+    // =require content13Anim.js
+    // =require content14Anim.js
+    // =require content15Anim.js
+    // =require content16Anim.js
+    // =require content17Anim.js
+    // =require content18Anim.js
+    // =require content19Anim.js
+    // =require content20Anim.js
+    // =require content21Anim.js
   }
 });

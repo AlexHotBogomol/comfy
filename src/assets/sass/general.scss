@@ -28,6 +28,10 @@ h3 {
   line-height: 1.06;
 }
 h4{
+  font-size: 2.42rem;
+  line-height: 1.2;
+}
+h5{
   font-size: 1.66rem;
   line-height: 1.1;
 }
@@ -112,9 +116,44 @@ p {
   top: 50%;
   transform: translateY(-50%);
 }
+.vertical-top{
+  top: 50px;
+}
+.vertical-bottom{
+  bottom: 50px;
+}
 .w-100{
   width: 100%;
 }
 .d-none{
   display: none;
 }
+
+/* total width */
+::-webkit-scrollbar {
+  background-color: transparent;
+  width:16px;
+}
+
+/* background of the scrollbar except button or resizer */
+::-webkit-scrollbar-track {
+  background-color:#000;
+  padding: 0 2px;
+}
+::-webkit-scrollbar-track:hover {
+  background-color:rgba(#a0a1a5, 0.5)
+}
+
+/* scrollbar itself */
+::-webkit-scrollbar-thumb {
+  background-color: #a0a1a5;
+  border-radius:16px;
+  margin: 0 2px;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color:#a0a0a5;
+}
+
+/* set button(top and bottom of the scrollbar) */
+::-webkit-scrollbar-button {display:none}
