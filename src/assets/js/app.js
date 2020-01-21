@@ -81,5 +81,18 @@ document.addEventListener("DOMContentLoaded", function() {
     // =require content19Anim.js
     // =require content20Anim.js
     // =require content21Anim.js
+    // =require content22Anim.js
+    // =require content23Anim.js
+    // =require content24Anim.js
+    // =require content25Anim.js
+    // =require content26Anim.js
+    // =require content27Anim.js
+    // =require content28Anim.js
+    // =require content29Anim.js
+    // =require content30Anim.js
+    // =require content31Anim.js
+    // =require content32Anim.js
+    // =require content33Anim.js
+    // =require content34Anim.js
   }
 });

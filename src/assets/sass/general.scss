@@ -46,6 +46,10 @@ p {
   font-size: 1rem;
   line-height: 1.33;
 }
+@mixin p3 {
+  font-size: 0.83rem;
+  line-height: 1.2;
+}
 .btn{
   @include p2;
   display: inline-block;
@@ -128,6 +132,71 @@ p {
 .d-none{
   display: none;
 }
+.grey{
+  color: $greyColor;
+}
+
+.d-flex{
+  display: flex;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
+.justify-content-center{
+  justify-content: center;
+}
+.align-items-center{
+  align-items: center;
+}
+
+.icon{
+  width: 44px;
+  height: 44px;
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon-small{
+  width: 34px;
+  height: 34px;
+}
+
+.icon-loading{
+  background-image: url('../i/icons/icon-loading.png');
+}
+.icon-contrast{
+  background-image: url('../i/icons/icon-contrast.png');
+}
+.icon-pixel{
+  background-image: url('../i/icons/icon-pixel.png');
+}
+.icon-oled{
+  background-image: url('../i/icons/icon-oled.png');
+}
+.icon-colors{
+  background-image: url('../i/icons/icon-colors.png');
+}
+.icon-touch{
+  background-image: url('../i/icons/icon-touch.png');
+}
+.icon-night{
+  background-image: url('../i/icons/icon-night.png');
+}
+.icon-tone{
+  background-image: url('../i/icons/icon-tone.png');
+}
+.icon-response{
+  background-image: url('../i/icons/icon-response.png');
+}
+.icon-efficiency{
+  background-image: url('../i/icons/icon-efficiency.png');
+}
+.icon-black{
+  background-image: url('../i/icons/icon-black.png');
+}
+
+//SCROLLBAR
 
 /* total width */
 ::-webkit-scrollbar {
@@ -157,3 +226,5 @@ p {
 
 /* set button(top and bottom of the scrollbar) */
 ::-webkit-scrollbar-button {display:none}
+
+

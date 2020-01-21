@@ -79,5 +79,78 @@
   @include p1;
 }
 
+.content28{
+  h5{
+    padding-bottom: 20px;
+  }
+  p{
+    @include p3;
+    color: $greyColor2;
+  }
+}
+.content30, .content31{
+  top: 300px;
+}
+.content30{
+  p{
+    @include p1;
+  }
+}
+.content31{
+  h5{
+    padding-bottom: 20px;
+  }
+  p{
+    @include p3;
+  }
+}
+.content32{
+  h3 span{
+    color: $greyColor;
+  }
+}
+.content33{
+  p{
+    @include p3;
+    color: $greyColor;
+    padding-bottom: 10px;
+  }
+  li{
+    padding-bottom: 50px;
+  }
+  h5{
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    .icon{
+      margin-left: 10px;
+    }
+  }
+}
+.content34{
+  max-width: 1000px;
+  right: 0;
+  .icon{
+    margin-bottom: 20px;
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  li{
+    flex-basis: 250px;
+    padding: 0 20px 40px;
+    box-sizing: border-box;
+  }
+  p{
+    @include p3;
+    padding-bottom: 10px;
+    &:last-of-type{
+      color: $greyColor;
+    }
+  }
+}
 
 @import "./media";
