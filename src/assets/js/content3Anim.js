@@ -1,8 +1,6 @@
 const content3 = intro.querySelector("#content3"),
   content3Heading1 = content3.querySelector("h5:first-of-type"),
-  content3Heading2 = content3.querySelector("h5:last-of-type"),
-  content3Description1 = content3.querySelector("p:first-of-type"),
-  content3Description2 = content3.querySelector("p:last-of-type");
+  content3Heading2 = content3.querySelector("h5:last-of-type");
 
 const content3StartTL = gsap.timeline();
 content3StartTL.set(content3, {zIndex: 100});
@@ -19,19 +17,7 @@ content3StartTL.fromTo(
     duration: 1
   }
 );
-content3StartTL.fromTo(
-  content3Description1,
-  {
-    y: 80
-  },
-  {
-    opacity: 1,
-    y: 0,
-    ease: "linear",
-    visibility: "visible",
-    duration: 0.8
-  }, "-=0.2"
-);
+
 
 const content3StartTL2 = gsap.timeline();
 content3StartTL2.fromTo(
@@ -46,19 +32,6 @@ content3StartTL2.fromTo(
     visibility: "visible",
     duration: 0.8
   }
-);
-content3StartTL2.fromTo(
-  content3Description2,
-  {
-    y: 80
-  },
-  {
-    opacity: 1,
-    y: 0,
-    ease: "linear",
-    visibility: "visible",
-    duration: 0.8
-  }, "-=0.2"
 );
 
 const content3sceneStart = new ScrollMagic.Scene({

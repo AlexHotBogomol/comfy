@@ -34,6 +34,7 @@ h4{
 h5{
   font-size: 1.66rem;
   line-height: 1.1;
+  letter-spacing: 1px;
 }
 p {
   font-weight: 500;
@@ -89,10 +90,10 @@ p {
   width: 1260px;
   height: 100%;
   max-width: 100%;
-  padding: 0 30px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  margin-left: -16px; // 16 = scrollbarwidth
   box-sizing: border-box;
   z-index: 999;
 }
@@ -126,14 +127,20 @@ p {
 .vertical-bottom{
   bottom: 50px;
 }
+.w-50{
+  width: 50%;
+}
 .w-100{
   width: 100%;
 }
 .d-none{
   display: none;
 }
-.grey{
+.text-grey{
   color: $greyColor;
+}
+.text-dark{
+  color: $darkColor
 }
 
 .d-flex{

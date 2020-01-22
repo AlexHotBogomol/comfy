@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const video = intro.querySelector("#video");
   const preloader = document.querySelector('#preloader');
 
-  const url = './assets/videos/iphone.mp4';
+  const url = './assets/videos/iphone2.mp4';
 
   fetch(url, {
     method: 'GET',
@@ -79,10 +79,21 @@ document.addEventListener("DOMContentLoaded", function() {
         scrollpos = (e.scrollPos + sceneOffset) / pixelsPerSecond;
       });
 
+      // requestAnimationFrame(function animate(time){
+      //   delay += (scrollpos - delay) * accelamount;
+      //   if(+delay.toFixed(6) !== video.currentTime){
+      //     video.currentTime = delay;
+      //   }
+      //   requestAnimationFrame(animate);
+      // });
+
       setInterval(() => {
         delay += (scrollpos - delay) * accelamount;
         video.currentTime = delay;
       }, timeToUpdateFrames);
+
+
+      //TEXT ANIMATION
 
       // =require content1Anim.js
       // =require content2Anim.js
@@ -98,7 +109,6 @@ document.addEventListener("DOMContentLoaded", function() {
       // =require content12Anim.js
       // =require content13Anim.js
       // =require content14Anim.js
-      // =require content15Anim.js
       // =require content16Anim.js
       // =require content17Anim.js
       // =require content18Anim.js

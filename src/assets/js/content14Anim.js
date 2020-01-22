@@ -11,7 +11,7 @@ const content14sceneStart = new ScrollMagic.Scene({
 
 const content14sceneEnd = new ScrollMagic.Scene({
   triggerElement: intro,
-  offset: 13200,
+  offset: 14100,
   duration: 200,
   triggerHook: 0
 })
