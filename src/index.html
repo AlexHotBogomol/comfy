@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.min.css" />
   </head>
   <body>
-   <img src="./assets/i/preloader.svg" alt="preloader" id="preloader">
+   <img src="./assets/i/preloader.gif" alt="preloader" id="preloader">
     <div class="intro">
       <div class="container">
         <div class="content content1 vertical-center invisible" id="content1">
@@ -75,7 +75,7 @@
           </button>
         </div>
         <div
-          class="content content7 vertical-center invisible text-center"
+          class="content content7 w-100 vertical-center invisible text-center"
           id="content7"
         >
           <h2>
@@ -182,7 +182,7 @@
           </h3>
         </div>
         <div class="content w-100 content20 invisible" id="content20">
-          <h3 class="text-center text-dark">
+          <h3 class="text-center text-grey">
             Сверхширокоугольная
           </h3>
         </div>
@@ -290,7 +290,7 @@
               вы еще не видели.
           </h3>
         </div>
-        <div class="content content33 w-100 invisible vertical-center" id="content33">
+        <div class="content content33 invisible vertical-center" id="content33">
           <ul>
             <li>
               <p>До</p>
@@ -362,11 +362,12 @@
             </li>
           </ul>
         </div>
-        <div class="content vertical-top w-100 invisible" id="content35">
+        <div class="content content35 w-100 invisible" id="content35">
           <h3 class="text-center">
-            Аккумулятор, который работает дольше. На час? Нет, на пять!
+            Аккумулятор, который работает дольше.<br/>
+            На час? Нет, на пять!
           </h3>
-          <p>Рекордные параметры ресурса аккумуляторов IPhone.</p>
+          <p class="text-center">Рекордные параметры ресурса аккумуляторов IPhone.</p>
         </div>
         <div class="content content36 w-100 invisible" id="content36">
           <div>
@@ -388,8 +389,9 @@
             <p>До</p>
             <h5>50% заряда</h5>
             <p>
-              можно восстановить с функцией<br/>
-              быстрой зарядки всего за 30 минут
+              можно восстановить<br/>
+              с функцией быстрой<br/>
+              зарядки всего за 30 минут
           </div>
         </div>
       </div>
@@ -409,9 +411,20 @@
         type="video/mp4"
       ></video>
     </div>
-    <section class="banner">
-      <div class="container">
-        <div class="banner-img"></div>
+    <section class="banner" id="banner">
+      <div class="banner-container d-flex justify-content-between align-items-center">
+        <div class="banner-img">
+          <img src="./assets/i/banner-img.png" alt="iPhone 11 Pro">
+        </div>
+        <div class="banner-content">
+          <h4>
+            Хотите iPhone 11<br/>
+            или iPhone 11 Pro?
+          </h4>
+          <button class="btn btn--withArrow">
+            Купить в Comfy
+          </button>
+        </div>
       </div>
     </section>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.2/gsap.min.js"></script>

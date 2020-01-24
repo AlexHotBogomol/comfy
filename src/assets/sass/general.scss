@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 html,
 body {
   min-width: 320px;
@@ -91,11 +94,11 @@ p {
   height: 100%;
   max-width: 100%;
   position: absolute;
-  left: 50%;
+  left: 51.3%;
   transform: translateX(-50%);
   margin-left: -16px; // 16 = scrollbarwidth
   box-sizing: border-box;
-  z-index: 999;
+  z-index: 100;
 }
 
 .content{

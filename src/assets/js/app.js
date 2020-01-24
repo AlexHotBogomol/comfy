@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const video = intro.querySelector("#video");
   const preloader = document.querySelector('#preloader');
 
-  const url = './assets/videos/iphone2.mp4';
+  const url = './assets/videos/iphone.mp4';
 
   fetch(url, {
     method: 'GET',
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function showFirstContent() {
       const content1 = document.querySelector('#content1');
-      gsap.fromTo("#content1", {
+      gsap.fromTo(content1, {
         y: 80
       }, {
         opacity: 1,
@@ -78,14 +78,6 @@ document.addEventListener("DOMContentLoaded", function() {
       scene.on("update", e => {
         scrollpos = (e.scrollPos + sceneOffset) / pixelsPerSecond;
       });
-
-      // requestAnimationFrame(function animate(time){
-      //   delay += (scrollpos - delay) * accelamount;
-      //   if(+delay.toFixed(6) !== video.currentTime){
-      //     video.currentTime = delay;
-      //   }
-      //   requestAnimationFrame(animate);
-      // });
 
       setInterval(() => {
         delay += (scrollpos - delay) * accelamount;
@@ -128,6 +120,9 @@ document.addEventListener("DOMContentLoaded", function() {
       // =require content32Anim.js
       // =require content33Anim.js
       // =require content34Anim.js
+      // =require content35Anim.js
+      // =require content36Anim.js
+      // =require bannerAnim.js
     }
   }
 });

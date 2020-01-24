@@ -1,9 +1,538 @@
-@media only screen and (orientation: portrait){
+//portrait
+@media only screen
+and (orientation: portrait) {
   .intro video {
-      height: 70%;
-      width: 100%;
-      object-fit: cover;
-      position: absolute;
-      bottom: 0;
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
   }
 }
+
+@media only screen
+and (max-device-width: 1600px)
+and (min-device-height: 900px)
+and (orientation: landscape) {
+  html,
+  body {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 6.5rem;
+  }
+  h2 {
+    font-size: 3.125rem;
+  }
+  h3 {
+    font-size: 2.225rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.4rem;
+  }
+  .container,
+  .banner-container {
+    max-width: 1060px;
+  }
+  .vertical-top {
+    top: 8%;
+  }
+  .content2{
+    top: 15%;
+  }
+  .content10 {
+    top: 11%;
+  }
+  .content24,
+  .content25,
+  .content26,
+  .content27,
+  .content28{
+    bottom: 60px;
+    padding: 0 8%;
+    box-sizing: border-box;
+  }
+  .content30,
+  .content31 {
+    top: 32%;
+  }
+  .content31 {
+    padding: 0 8%;
+  }
+  .content33 {
+    li {
+      padding-bottom: 20px;
+    }
+  }
+  .content34 {
+    max-width: 660px;
+    right: -50px;
+  }
+  .content35 {
+    top: 13%;
+  }
+  .content36{
+    bottom: 20px;
+  }
+}
+@media only screen
+and (max-device-width: 1440px)
+and (min-device-height: 900px)
+and (orientation: landscape){
+  .content10, .vertical-top {
+    top: 90px;
+  }
+  .content2{
+    top: 130px;
+  }
+  .content17, .content19, .content20 {
+    top: 50px;
+  }
+  .content24, .content25, .content26, .content28, .vertical-bottom {
+    bottom: 70px;
+  }
+  .content27{
+    bottom: 100px;
+  }
+  .content30, .content31 {
+    top: 270px;
+  }
+  .content35 {
+    top: 110px;
+  }
+  .content36{
+    bottom: 50px;
+  }
+}
+
+@media only screen
+and (max-device-width: 1366px)
+and (min-device-height: 768px)
+and (orientation: landscape){
+  html,
+  body {
+    font-size: 18px;
+  }
+  h1 {
+    font-size: 6.5rem;
+  }
+  h2 {
+    font-size: 3.125rem;
+  }
+  h3 {
+    font-size: 2.225rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  h5 {
+    font-size: 1.4rem;
+  }
+  .container, .banner-container{
+    max-width: 70%;
+  }
+  .vertical-top {
+    top: 7%;
+  }
+  .content2 {
+    top: 15%;
+  }
+  .content24, .content25, .content26, .content27, .content28 {
+    bottom: 6%;
+  }
+  .content31, .content28, .content24, .content25, .content26, .content27, .content36 {
+    padding: 0 8%;
+    max-width: 100%;
+  }
+  .content30, .content31 {
+    top: 36%;
+  }
+  .content33 li {
+     padding-bottom: 30px;
+   }
+  .content34{
+    max-width: 66%;
+    right: -50px;
+  }
+  .content35 {
+    top: 13%;
+  }
+  .content36{
+    bottom: 20px;
+  }
+}
+
+//iPad Pro
+
+/* Landscape*/
+@media only screen
+and (max-device-width: 1366px)
+and (min-device-height: 1024px)
+and (orientation: landscape) {
+  .vertical-top, .content10{
+    top: 180px;
+  }
+  .content17, .content19, .content20 {
+    top: 110px;
+  }
+  .content10, .vertical-top {
+    top: 12%;
+  }
+  .content24, .content25, .content26, .content27, .content28 {
+    bottom: 10%;
+  }
+  .content30, .content31 {
+    top: 30%;
+  }
+  .content35 {
+    top: 17%;
+  }
+  .content36 {
+    bottom: 10%;
+  }
+}
+
+/* Portrait*/
+@media only screen
+and (max-device-width: 1024px)
+and (min-device-height: 1024px)
+and (orientation: portrait) {
+  h2{
+    font-size: 2.6rem;
+  }
+  h3{
+    font-size: 2.3rem;
+  }
+  h4{
+    font-size: 1.7rem;
+  }
+  h5{
+    font-size: 1.5rem;
+  }
+  html, body{
+    font-size: 30px;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .content2, .content10, .content35, .vertical-top, .vertical-center, .content7, .content17, .content19, .content20{
+    top: 10%;
+    transform: none;
+    br{
+      display: none;
+    }
+  }
+  .content20 h3{
+    color: $lightColor;
+  }
+  .content21{
+    top: 5%;
+  }
+  #content22{
+    h5{
+      padding: 0 20px;
+    }
+  }
+  .content-cursor{
+    top: 54%;
+    li{
+      @include p2;
+    }
+  }
+
+  .content24, .content25, .content26, .content27, .content28{
+    padding: 0;
+    top: 10%;
+  }
+  .content28{
+    top: 5%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    br{
+      display: none;
+    }
+    div{
+      padding-bottom: 30px;
+    }
+    h5{
+      padding-bottom: 5px;
+    }
+  }
+  #content29{
+    top: 6%;
+  }
+  .content30, .content31{
+    top: 35%;
+  }
+  .content31{
+    &>div{
+      padding: 0 10px;
+    }
+    br{
+      display: none;
+    }
+  }
+  .content34 {
+    max-width: 66%;
+    li{
+      flex-basis: 50%;
+    }
+  }
+  .content36 {
+    padding: 0;
+    div {
+      padding: 0 10px;
+    }
+    br{
+      display: none;
+    }
+  }
+}
+
+
+//iPad
+
+/* Landscape*/
+@media only screen
+and (max-device-width: 1024px)
+and (min-device-height: 768px)
+and (orientation: landscape){
+  h3 {
+    font-size: 2rem;
+  }
+  .content24, .content25, .content26, .content27, .content28 {
+    bottom: 70px;
+  }
+  .content30, .content31 {
+    top: 34%;
+  }
+  .content28, .content31, .content36{
+    padding: 0;
+  }
+  .content35 {
+    top: 15%;
+  }
+  .content36{
+    max-width: 100%;
+    div{
+      padding: 10px;
+    }
+  }
+  .content34{
+    top: 53%;
+    li{
+      flex-basis: 50%;
+    }
+  }
+  .banner-container{
+    max-width: 80%;
+  }
+}
+
+
+@media only screen
+and (max-device-width: 768px)
+and (min-device-height: 1024px)
+and (orientation: portrait){
+  h2{
+    font-size: 2.1rem;
+  }
+  h3{
+    font-size: 2rem;
+  }
+  h5{
+    font-size: 1.2rem;
+  }
+  .container{
+    max-width: 90%;
+  }
+  .vertical-center{
+    top: 5%;
+    transform: none;
+  }
+  .content-cursor{
+    top: 50%;
+  }
+  .content15, .content18{
+    @include p2;
+    padding: 0 2%;
+  }
+  .content18{
+    bottom: 20px;
+  }
+  .content22{
+    top: 15%;
+    bottom: auto;
+  }
+  .content33{
+    width: 49%;
+    top: 50%;
+    transform: translateY(-50%);
+    br{
+      display: block;
+    }
+  }
+  .content34{
+    top: 50%;
+    transform: translateY(-50%);
+    li{
+      flex-basis: 100%;
+      &:nth-child(n+4){
+        display: none;
+      }
+    }
+  }
+  .content36{
+    div{
+      &:last-child{
+        display: none;
+      }
+    }
+  }
+  .banner{
+    &-container{
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    &-content{
+      width: 100%;
+      flex-basis: 100%;
+      padding: 0 80px 100px;
+    }
+    &-img{
+      //width: 100%;
+      flex-basis: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen
+and (max-width: 767px)
+and (orientation: portrait){
+  .container{
+    left: 50%;
+    margin-left: 0;
+  }
+  .content{
+    padding: 0 20px;
+  }
+  html, body{
+    font-size: 16px;
+  }
+  h2{
+    font-size: 2.6rem;
+  }
+  h3{
+    font-size: 1.8rem;
+  }
+  h4{
+    font-size: 1.7rem;
+  }
+  h5{
+    font-size: 1.2rem;
+  }
+  .content2{
+    br{
+      display: none;
+    }
+  }
+  .content3{
+    display: none;
+  }
+  .vertical-center{
+    top: 10%;
+    transform: none;
+  }
+  .content-cursor{
+    width: 100%;
+    top: 3%;
+  }
+  #content18, .content21, .content24, .content25, .content26, .content27{
+    top: 13%;
+    bottom: auto;
+  }
+  .content22{
+    top: 22%;
+  }
+  .content28{
+    top: 6%;
+    bottom: auto;
+    flex-direction: column;
+    div{
+      padding-bottom: 30px;
+    }
+    h5{
+      padding-bottom: 5px;
+    }
+  }
+  .content31{
+    flex-direction: column;
+    br{
+      display: none;
+    }
+    div{
+      padding-bottom: 30px;
+    }
+    h5{
+      padding-bottom: 5px;
+    }
+  }
+  .icon{
+    width: 22px;
+    height: 22px;
+  }
+  .content33{
+    width: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    li{
+      padding-bottom: 30px;
+    }
+  }
+  .content34{
+    width: 70%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    ul{
+      flex-direction: column;
+    }
+    li{
+      width: 100%;
+    }
+    li:nth-child(n+4){
+      display: none;
+    }
+  }
+  .content36{
+    div:last-child,  div:first-child{
+      display: none;
+    }
+    justify-content: center;
+    text-align: center;
+  }
+  .banner{
+    &-container{
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    &-content{
+      width: 100%;
+      flex-basis: 100%;
+      padding: 0 20px 70px;
+    }
+    &-img{
+      flex-basis: 100%;
+      text-align: center;
+    }
+  }
+}
+
+
+
+
