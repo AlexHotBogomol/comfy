@@ -2,7 +2,7 @@ const content28 = intro.querySelector("#content28");
 
 const content28sceneStart = new ScrollMagic.Scene({
   triggerElement: intro,
-  offset: 32600,
+  offset: 16200,
   duration: 200,
   triggerHook: 0
 })
@@ -11,7 +11,7 @@ const content28sceneStart = new ScrollMagic.Scene({
 
 const content28sceneEnd = new ScrollMagic.Scene({
   triggerElement: intro,
-  offset: 34000,
+  offset: 17600,
   duration: 200,
   triggerHook: 0
 })

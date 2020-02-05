@@ -36,7 +36,7 @@ content3StartTL2.fromTo(
 
 const content3sceneStart = new ScrollMagic.Scene({
   triggerElement: intro,
-  offset: 1800,
+  offset: 1300,
   duration: 300,
   triggerHook: 0
 })
@@ -45,7 +45,7 @@ const content3sceneStart = new ScrollMagic.Scene({
 
 const content3sceneStart2 = new ScrollMagic.Scene({
   triggerElement: intro,
-  offset: 2800,
+  offset: 1600,
   duration: 300,
   triggerHook: 0
 })
@@ -65,8 +65,8 @@ content3EndTL.set(content3, {
 
 const content3sceneEnd = new ScrollMagic.Scene({
   triggerElement: intro,
-  offset: 3400,
-  duration: 400,
+  offset: 2800,
+  duration: 300,
   triggerHook: 0
 })
   .setTween(content3EndTL)

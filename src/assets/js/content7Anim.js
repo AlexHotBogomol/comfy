@@ -22,7 +22,7 @@ content7EndTL.set(content7, {
 
 const content7sceneStart = new ScrollMagic.Scene({
   triggerElement: intro,
-  offset: 6200,
+  offset: 4420,
   duration: 100,
   triggerHook: 0
 })
@@ -31,7 +31,7 @@ const content7sceneStart = new ScrollMagic.Scene({
 
 const content7sceneEnd = new ScrollMagic.Scene({
   triggerElement: intro,
-  offset: 6600,
+  offset: 4650,
   duration: 100,
   triggerHook: 0
 })

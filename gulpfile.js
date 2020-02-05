@@ -13,7 +13,7 @@ const babel = require("gulp-babel");
 const uglify = require("gulp-uglify");
 const plumber = require("gulp-plumber");
 const imagemin = require("gulp-imagemin");
-const include = require('gulp-include')
+const include = require('gulp-include');
 const del = require("del");
 const browsersync = require("browser-sync").create();
 
@@ -27,6 +27,7 @@ var path = {
     css: "dist/assets/css/",
     images: "dist/assets/i/",
     fonts: "dist/assets/fonts/",
+    libs: "dist/assets/libs/",
     videos: "dist/assets/videos/"
   },
   src: {
@@ -35,6 +36,7 @@ var path = {
     css: "src/assets/sass/style.scss",
     images: "src/assets/i/**/*.{jpg,png,svg,gif,ico}",
     fonts: "src/assets/fonts/**/*.{ttf,eot,woff,woff2}",
+    libs: "src/assets/libs/*",
     videos: "src/assets/videos/*"
   },
   watch: {
@@ -43,6 +45,7 @@ var path = {
     css: "src/assets/sass/**/*.scss",
     images: "src/assets/i/**/*.{jpg,png,svg,gif,ico}",
     fonts: "src/assets/fonts/**/*.{ttf,eot,woff,woff2}",
+    libs: "src/assets/libs/*",
     videos: "src/assets/videos/*"
   },
   clean: "./dist"
@@ -133,6 +136,10 @@ function videos() {
   return src(path.src.videos).pipe(dest(path.build.videos));
 }
 
+function libs() {
+  return src(path.src.libs).pipe(dest(path.build.libs));
+}
+
 function clean() {
   return del(path.clean);
 }
@@ -144,11 +151,12 @@ function watchFiles() {
   gulp.watch([path.watch.images], images);
   gulp.watch([path.watch.fonts], fonts);
   gulp.watch([path.watch.videos], videos);
+  gulp.watch([path.watch.libs], libs);
 }
 
 const build = gulp.series(
   clean,
-  gulp.parallel(html, css, js, images, fonts, videos)
+  gulp.parallel(html, css, js, images, fonts, videos, libs)
 );
 const watch = gulp.parallel(build, watchFiles, browserSync);
 
@@ -159,6 +167,7 @@ exports.js = js;
 exports.images = images;
 exports.fonts = fonts;
 exports.videos = videos;
+exports.libs = libs;
 exports.clean = clean;
 exports.build = build;
 exports.watch = watch;

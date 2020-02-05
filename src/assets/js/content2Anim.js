@@ -11,8 +11,8 @@ const content2sceneStart = new ScrollMagic.Scene({
 
 const content2sceneEnd = new ScrollMagic.Scene({
   triggerElement: intro,
-  offset: 3400,
-  duration: 400,
+  offset: 2800,
+  duration: 300,
   triggerHook: 0
 })
   .setTween(initEndTimeline(content2))
